@@ -1,0 +1,542 @@
+building_name: jtc
+levels:
+  L1_JTC:
+    lanes:
+    - - 0
+      - 1
+      - {speed_limit: 0}
+    - - 1
+      - 0
+      - {speed_limit: 0}
+    - - 1
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 1
+      - {speed_limit: 0}
+    - - 3
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 3
+      - {speed_limit: 0}
+    - - 1
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 1
+      - {speed_limit: 0}
+    - - 5
+      - 6
+      - {speed_limit: 0}
+    - - 6
+      - 5
+      - {speed_limit: 0}
+    - - 5
+      - 7
+      - {speed_limit: 0}
+    - - 7
+      - 5
+      - {speed_limit: 0}
+    - - 8
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 8
+      - {speed_limit: 0}
+    - - 9
+      - 4
+      - {door_name: turnstile_1, speed_limit: 0}
+    - - 4
+      - 9
+      - {door_name: turnstile_1, speed_limit: 0}
+    - - 10
+      - 0
+      - {speed_limit: 0}
+    - - 0
+      - 10
+      - {speed_limit: 0}
+    - - 0
+      - 11
+      - {speed_limit: 0}
+    - - 11
+      - 0
+      - {speed_limit: 0}
+    - - 0
+      - 12
+      - {speed_limit: 0}
+    - - 12
+      - 0
+      - {speed_limit: 0}
+    - - 12
+      - 5
+      - {speed_limit: 0}
+    - - 5
+      - 12
+      - {speed_limit: 0}
+    - - 13
+      - 14
+      - {speed_limit: 0}
+    - - 14
+      - 13
+      - {speed_limit: 0}
+    - - 15
+      - 13
+      - {speed_limit: 0}
+    - - 13
+      - 15
+      - {speed_limit: 0}
+    - - 16
+      - 13
+      - {speed_limit: 0}
+    - - 13
+      - 16
+      - {speed_limit: 0}
+    - - 17
+      - 18
+      - {speed_limit: 0}
+    - - 18
+      - 17
+      - {speed_limit: 0}
+    - - 18
+      - 13
+      - {speed_limit: 0}
+    - - 13
+      - 18
+      - {speed_limit: 0}
+    - - 9
+      - 19
+      - {speed_limit: 0}
+    - - 19
+      - 9
+      - {speed_limit: 0}
+    - - 19
+      - 17
+      - {speed_limit: 0}
+    - - 17
+      - 19
+      - {speed_limit: 0}
+    - - 19
+      - 20
+      - {speed_limit: 0}
+    - - 20
+      - 19
+      - {speed_limit: 0}
+    - - 20
+      - 21
+      - {speed_limit: 0}
+    - - 21
+      - 20
+      - {speed_limit: 0}
+    - - 21
+      - 22
+      - {speed_limit: 0}
+    - - 22
+      - 21
+      - {speed_limit: 0}
+    - - 21
+      - 23
+      - {speed_limit: 0}
+    - - 23
+      - 21
+      - {speed_limit: 0}
+    - - 21
+      - 24
+      - {speed_limit: 0}
+    - - 24
+      - 21
+      - {speed_limit: 0}
+    - - 9
+      - 25
+      - {speed_limit: 0}
+    - - 25
+      - 9
+      - {speed_limit: 0}
+    - - 25
+      - 26
+      - {speed_limit: 0}
+    - - 26
+      - 25
+      - {speed_limit: 0}
+    - - 26
+      - 27
+      - {speed_limit: 0}
+    - - 27
+      - 26
+      - {speed_limit: 0}
+    - - 26
+      - 28
+      - {speed_limit: 0}
+    - - 28
+      - 26
+      - {speed_limit: 0}
+    - - 26
+      - 29
+      - {speed_limit: 0}
+    - - 29
+      - 26
+      - {speed_limit: 0}
+    - - 30
+      - 31
+      - {speed_limit: 0}
+    - - 31
+      - 30
+      - {speed_limit: 0}
+    - - 8
+      - 32
+      - {speed_limit: 0}
+    - - 32
+      - 8
+      - {speed_limit: 0}
+    - - 31
+      - 32
+      - {speed_limit: 0}
+    - - 32
+      - 31
+      - {speed_limit: 0}
+    vertices:
+    - - 68.27538986847566
+      - -81.17591815868731
+      - {is_passthrough_point: true, name: ''}
+    - - 59.425825076437405
+      - -81.2725802136311
+      - {is_passthrough_point: true, name: ''}
+    - - 59.41324219346031
+      - -75.34073664574476
+      - {name: ''}
+    - - 57.92712833253998
+      - -75.34073664574476
+      - {name: ''}
+    - - 57.88932169797289
+      - -81.2851920894261
+      - {is_passthrough_point: false, name: L1_turnstile3_outside}
+    - - 76.52486131521505
+      - -70.69678304266279
+      - {is_passthrough_point: true, name: ''}
+    - - 90.98410148241759
+      - -70.51957893953849
+      - {name: L1_reception}
+    - - 74.70321357251174
+      - -52.40286579896669
+      - {name: L1_meeting_room}
+    - - 46.46302021333455
+      - -72.1444524270218
+      - {is_passthrough_point: false, name: L1_entrance_inside}
+    - - 57.84162851249523
+      - -85.35088393910263
+      - {name: L1_turnstile3_inside}
+    - - 68.26825763526745
+      - -82.67997857389985
+      - {is_parking_spot: true, name: ''}
+    - - 79.1613232127294
+      - -81.192965935624
+      - {name: L1_turnstile1}
+    - - 68.27309943586002
+      - -70.75676918293833
+      - {name: ''}
+    - - 81.0559168853183
+      - -93.73146090847423
+      - {name: L1_lift2_outside}
+    - - 77.09993385864934
+      - -90.3126278194008
+      - {lift: lift_3, lift_cabin: lift_3, name: L1_lift3}
+    - - 77.09993385864934
+      - -93.64680188014914
+      - {lift: lift_2, lift_cabin: lift_2, name: L1_lift2}
+    - - 77.09993385864934
+      - -96.95198312297794
+      - {lift: lift_1, lift_cabin: lift_1, name: L1_lift1}
+    - - 79.19939078265777
+      - -85.35088393910263
+      - {is_passthrough_point: false, name: L1_turnstile1_inside}
+    - - 80.1677798939887
+      - -87.25510322724081
+      - {is_passthrough_point: false, name: L1_lift2_point}
+    - - 68.38359106495143
+      - -85.35088393910263
+      - {is_passthrough_point: false, name: L1_turnstile2_inside}
+    - - 69.98553123346036
+      - -86.9976470041152
+      - {name: L1_lift8_Point}
+    - - 69.98553123346036
+      - -93.61728719150703
+      - {name: L1_lift5_outside}
+    - - 73.20686524686582
+      - -93.58881624431004
+      - {lift: lift_5, lift_cabin: lift_5, name: L1_lift5}
+    - - 73.20686524686582
+      - -90.3126278194008
+      - {lift: lift_6, lift_cabin: lift_6, name: L1_lift6}
+    - - 73.20686524686582
+      - -96.95198312297794
+      - {lift: lift_4, lift_cabin: lift_4, name: L1_lift4}
+    - - 59.45800710432811
+      - -86.78501367749321
+      - {name: Lift15_Point}
+    - - 59.438523930686166
+      - -93.46043604656228
+      - {name: ''}
+    - - 62.798443613747075
+      - -96.92299030505839
+      - {lift: lift_10, lift_cabin: lift_10, name: L1_lift10}
+    - - 62.798443613747075
+      - -93.64680188014914
+      - {lift: lift_11, lift_cabin: lift_11, name: ''}
+    - - 62.798443613747075
+      - -90.34162063732035
+      - {lift: lift_12, lift_cabin: lift_12, name: ''}
+    - - 46.19071966743414
+      - -51.2387751666788
+      - {lift: lift_18, lift_cabin: lift_18, name: L1_lift18}
+    - - 48.64887573474325
+      - -52.9392619232963
+      - {name: L1_lift18_outside}
+    - - 48.830979624095946
+      - -64.32126238215355
+      - {name: L1_door_outside}
+  L22_JTC:
+    lanes:
+    - - 0
+      - 1
+      - {is_bidirectional: false, speed_limit: 0}
+    - - 1
+      - 2
+      - {is_bidirectional: false, speed_limit: 0}
+    - - 3
+      - 0
+      - {speed_limit: 0}
+    - - 0
+      - 3
+      - {speed_limit: 0}
+    vertices:
+    - - 69.87657436446061
+      - -93.64378018464141
+      - {name: ''}
+    - - 69.85317890281674
+      - -97.63147571929015
+      - {name: ''}
+    - - 69.85550930202953
+      - -100.70660507272324
+      - {name: ''}
+    - - 73.20367227940305
+      - -93.59779436430313
+      - {lift: lift_5, lift_cabin: lift_5, name: ''}
+  L2_JTC:
+    lanes:
+    - - 0
+      - 1
+      - {speed_limit: 0}
+    - - 1
+      - 0
+      - {speed_limit: 0}
+    - - 1
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 1
+      - {speed_limit: 0}
+    - - 2
+      - 3
+      - {speed_limit: 0}
+    - - 3
+      - 2
+      - {speed_limit: 0}
+    - - 3
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 3
+      - {speed_limit: 0}
+    - - 4
+      - 5
+      - {speed_limit: 0}
+    - - 5
+      - 4
+      - {speed_limit: 0}
+    - - 5
+      - 6
+      - {speed_limit: 0}
+    - - 6
+      - 5
+      - {speed_limit: 0}
+    - - 2
+      - 7
+      - {speed_limit: 0}
+    - - 7
+      - 2
+      - {speed_limit: 0}
+    - - 0
+      - 8
+      - {speed_limit: 0}
+    - - 8
+      - 0
+      - {speed_limit: 0}
+    - - 9
+      - 8
+      - {speed_limit: 0}
+    - - 8
+      - 9
+      - {speed_limit: 0}
+    - - 6
+      - 10
+      - {speed_limit: 0}
+    - - 10
+      - 6
+      - {speed_limit: 0}
+    - - 10
+      - 11
+      - {speed_limit: 0}
+    - - 11
+      - 10
+      - {speed_limit: 0}
+    - - 12
+      - 9
+      - {speed_limit: 0}
+    - - 9
+      - 12
+      - {speed_limit: 0}
+    vertices:
+    - - 53.36247062376679
+      - -59.09143898890406
+      - {name: L2_point_1}
+    - - 62.43725486265532
+      - -52.03453859124046
+      - {name: L2_point_2}
+    - - 75.55768981906397
+      - -51.40212196945731
+      - {name: L2_point_3}
+    - - 89.03982554499125
+      - -59.48672595754473
+      - {name: L2_point_4}
+    - - 90.79464972499657
+      - -68.92233859872208
+      - {name: L2_point_5}
+    - - 89.67203555367797
+      - -71.7983590575125
+      - {name: L2_point_6}
+    - - 86.70666013608935
+      - -72.74272846890125
+      - {name: L2_point_7}
+    - - 80.37657972805988
+      - -52.50189226508897
+      - {name: L2_kitchen}
+    - - 49.56621302920713
+      - -56.430092818549014
+      - {name: L2_door_inside}
+    - - 48.78917643011925
+      - -53.13012793621393
+      - {name: L2_lift18_outside}
+    - - 86.63931464884129
+      - -84.3788382206055
+      - {name: L2_point_8}
+    - - 86.66338131911402
+      - -86.00252277471304
+      - {is_charger: true, name: charging_point}
+    - - 46.18097070267486
+      - -51.408293104324606
+      - {lift: lift_18, lift_cabin: lift_18, name: ''}
+  L6_JTC:
+    lanes:
+    - - 0
+      - 1
+      - {speed_limit: 0}
+    - - 1
+      - 0
+      - {speed_limit: 0}
+    - - 0
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 0
+      - {speed_limit: 0}
+    - - 3
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 3
+      - {speed_limit: 0}
+    - - 5
+      - 0
+      - {speed_limit: 0}
+    - - 0
+      - 5
+      - {speed_limit: 0}
+    - - 6
+      - 0
+      - {speed_limit: 0}
+    - - 0
+      - 6
+      - {speed_limit: 0}
+    - - 0
+      - 7
+      - {speed_limit: 0}
+    - - 7
+      - 0
+      - {speed_limit: 0}
+    - - 4
+      - 8
+      - {speed_limit: 0}
+    - - 8
+      - 4
+      - {speed_limit: 0}
+    - - 8
+      - 9
+      - {speed_limit: 0}
+    - - 9
+      - 8
+      - {speed_limit: 0}
+    - - 9
+      - 10
+      - {speed_limit: 0}
+    - - 10
+      - 9
+      - {speed_limit: 0}
+    - - 10
+      - 11
+      - {speed_limit: 0}
+    - - 11
+      - 10
+      - {speed_limit: 0}
+    - - 11
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 11
+      - {speed_limit: 0}
+    vertices:
+    - - 80.32272919266326
+      - -93.63032240961422
+      - {name: L6_lift2_outside}
+    - - 80.32135724276587
+      - -95.89117126563524
+      - {is_charger: true, name: L6_lift3_outside}
+    - - 80.30742209332855
+      - -91.61648500049206
+      - {name: L6_lift1_outside}
+    - - 45.54864446069799
+      - -100.00387240943623
+      - {is_charger: true, name: 6point_1}
+    - - 45.01671106531565
+      - -97.51946236384603
+      - {name: 6point_2}
+    - - 76.83431908492437
+      - -93.62960623231568
+      - {lift: lift_2, lift_cabin: lift_2, name: L6_lift2}
+    - - 76.82965276225703
+      - -90.29543126355391
+      - {lift: lift_3, lift_cabin: lift_3, name: ''}
+    - - 76.89693796669108
+      - -96.9347034666284
+      - {lift: lift_1, lift_cabin: lift_1, name: ''}
+    - - 45.04183486655009
+      - -95.4292010147875
+      - {name: 6point_3}
+    - - 45.010718157225746
+      - -90.42706796449089
+      - {name: 6point_4}
+    - - 62.31213375281252
+      - -87.1167895581471
+      - {name: 6point_5}
+    - - 80.25757070513247
+      - -87.38238686087688
+      - {name: 6point_6}

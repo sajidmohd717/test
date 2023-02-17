@@ -1,0 +1,137 @@
+# ROBOT CONFIG =================================================================
+# To init MiR robot REST APIs and RMF states
+
+robots:
+  my_test_robot:
+    mir_config:
+      base_url: "http://192.168.1.6/api/v2.0.0/"
+      user: "application/json"
+      password: "Basic YWRtaW46OGM2OTc2ZTViNTQxMDQxNWJkZTkwOGJkNGRlZTE1ZGZiMTY3YTljODczZmM0YmI4YTgxZjZmMmFiNDQ4YTkxOA=="
+
+    rmf_config:
+      robot_state_update_frequency: 1
+      start:
+        # map_name: 'L1_JTC'
+        # map_name: 'L2_JTC'
+        map_name: 'L6_JTC'
+        max_merge_waypoint_distance: 3.0
+        max_merge_lane_distance: 3.0
+        # waypoint: 'L1_turnstile3_outside'
+        # waypoint: 'L2_point_2'
+        # waypoint: 'L1_lift2_outside'
+        # waypoint: 'L2_lift18_outside'
+        waypoint: '6point_2'
+        # waypoint: 'L2_point_3'
+        # waypoint: 'L6_lift2_outside'
+        # waypoint: 'L6_lift1_outside'
+        # waypoint: 'L1_turnstile3_inside'
+        # waypoint: 'L1_lift18_outside'
+        # waypoint: 'L1_door_outside'
+        # waypoint: 'L1_lift2_point'
+        # waypoint: 'L2_door_inside'
+        # waypoint: 'L2_point_2'
+
+        # NOTE(CH3):
+        # If you leave these empty, the robot will try to figure it out on init
+        # from the MiR reported location.
+        #
+        # Otherwise, fill BOTH of these! And make sure that the robot starts
+        # ON the waypoint!
+
+        waypoint_index: 21 # Optional
+        orientation: 1.75  # Optional, radians
+        
+# NODE CONFIG ==================================================================
+# To init the ROS2 node names used in the script
+
+node_names:
+  robot_command_handle: "rmf_mir_fleet_command_handler"
+  fleet_state_publisher: "rmf_mir_fleet_state_publisher"
+  rmf_fleet_adapter: "TestDeliveryAdapter"
+
+
+# TRANSFORM CONFIG =============================================================
+# For computing transforms between MiR and RMF coordinate systems
+#
+# NOTE(CH3): I am assuming that the transform is the same across maps
+# Otherwise... Future me or future someone else, PLEASE KEY THIS PER MAP
+# And also remember to edit the robot.transforms dictionary accordingly!!
+
+# L1_JTC turnstile1 Coordinates
+rmf_transform:
+  L1:
+    rmf_map_name: "L1_JTC"
+    reference_coordinates:
+      rmf: [[60.9429, -64.8569],
+            [81.8467, -73.4098],
+            [78.8025, -86.6305],
+            [50.5635, -54.6805]]
+
+      mir: [[30.600, 47.600],
+            [48.850, 40.150],
+            [46.250, 28.400],
+            [21.050, 56.550]]
+
+  L6:
+    rmf_map_name: "L6_JTC"
+    reference_coordinates:
+      rmf: [[46.0405, -101.6507],
+            [78.6587, -99.1814],
+            [76.5626, -106.5607],
+            [44.6809, -86.3179]]
+
+      mir: [[10.291, 14.030],
+            [39.045, 16.084],
+            [37.350, 9.500],
+            [8.850, 27.500]]
+  
+  L2:
+    rmf_map_name: "L2_JTC"
+    reference_coordinates:
+      rmf: [[53.7528, -55.3046],
+            [87.4625, -54.6380],
+            [93.7523, -75.1595],
+            [78.7670, -86.9564]]
+
+      mir: [[-10.800, 25.450],
+            [18.900, 26.000],
+            [24.300, 7.800],
+            [11.000, -2.500]]
+ 
+
+
+# FLEET CONFIG =================================================================
+# RMF Fleet parameters
+
+rmf_fleet:
+  name: "test_fleet_selva"
+  limits:
+    linear: [0.7, 0.3] # velocity, acceleration
+    angular: [0.5, 0.45]
+  profile: # Robot profile is modelled as a circle
+    footprint: 0.4
+    vicinity: 0.5
+  reversible: False
+  battery_system:
+    voltage: 24.0
+    capacity: 40.0
+    charging_current: 26.4
+  mechanical_system:
+    mass: 80.0
+    moment_of_inertia: 20.0
+    friction_coefficient: 0.20
+  ambient_system:
+    power: 20.0
+  cleaning_system:
+    power: 650.0
+  recharge_threshold: 0.01
+  recharge_soc: 1.0
+  account_for_battery_drain: True
+  publish_fleet_state: True
+  fleet_state_topic: "fleet_states"
+  fleet_state_publish_frequency: 1
+  task_capabilities: # Specify the types of RMF Tasks that robots in this fleet are capable of performing
+    loop: True
+    delivery: False
+    clean: False
+    finishing_request: "nothing" # [park, charge, nothing]

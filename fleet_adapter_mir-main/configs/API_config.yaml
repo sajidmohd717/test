@@ -1,0 +1,30 @@
+# USED TO PASS in API variables
+
+L1 L6_JTC:
+  map_id: "f780de79-812b-11ed-aa93-94c6911e788e"
+  x: 37.502
+  y: 21.037
+  ori: 180.00
+
+L2 L1_JTC:
+  map_id: "ef51d382-8d0a-11ed-aaa4-94c6911e788e"
+  x: 17.350
+  y: 59.550
+  ori: 180.00
+
+L6 L1_JTC:
+  map_id: "ef51d382-8d0a-11ed-aaa4-94c6911e788e"
+  x: 44.600
+  y: 22.150
+  ori: 180.00
+
+L1 L2_JTC:
+  map_id: "e73e1ab9-7bc9-11ed-ab9f-94c6911e788e"
+  x: -17.500
+  y: 29.050
+  ori: 180.00
+
+
+lift_status: 'https://g9lgeciy86.execute-api.ap-southeast-1.amazonaws.com/staging/lift-status'
+robot-location: 'https://g9lgeciy86.execute-api.ap-southeast-1.amazonaws.com/staging/robot-location'
+lift-request: 'https://g9lgeciy86.execute-api.ap-southeast-1.amazonaws.com/staging/lift-request'
